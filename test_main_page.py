@@ -2,7 +2,7 @@ from pages.main_page import MainPage
 from pages.base_page import BasePage
 import pytest
 
-link = "http://selenium1py.pythonanywhere.com/"
+link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209?promo=midsummer"
 
 def test_guest_can_go_to_login_page(browser):
     # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес

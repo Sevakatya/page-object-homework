@@ -15,7 +15,7 @@ class ProductPage(BasePage):
         assert basket_name == product_name, f"{basket_name} is not {product_name}"
 
     def check_price_after_adding_to_basket(self):
-        price = self.browser.find_element(*BasketPageLocators.BASKET_PRICE).text.strip()
+        price = self.browser.find_element(*BasketPageLocators.BASKET_PRICE).text
         check_product_price = self.browser.find_element(*BasketPageLocators.PRODUCT_PRICE).text
         assert check_product_price == price, f"{check_product_price} is not {price}"
 

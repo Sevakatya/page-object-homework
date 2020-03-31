@@ -16,6 +16,9 @@ class BasketPageLocators():
     BASKET_PRICE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info .alertinner p > strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
+    BASKET_BUTTON = (By.XPATH, "//a[contains(text(), 'View basket')]")
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, ".basket-items .row")
+    BASKET_MESSAGE = (By.CSS_SELECTOR, "div#content_inner p")
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")

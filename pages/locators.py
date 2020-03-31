@@ -11,7 +11,8 @@ class RegisterPageLocators():
 
 class BasketPageLocators():
     BUTTON_ADD_TO_BASKET = (By.ID, "add_to_basket_form")
-    MESSAGE_ADD_IN_BASKET = (By.CSS_SELECTOR, "div.alertinner strong")
+    MESSAGE_PRODUCT_ADDED_IN_BASKET = (By.CSS_SELECTOR, "div.alertinner strong")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     BASKET_PRICE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info .alertinner p > strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
